@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "b25efc14-5603-4009-bb46-3b8ee48f9ff8",
+		"name": "utimate laravel crude demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/products",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get single product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}/api/products/1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "products",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"product 2\",\n    \"stock\": 100,\n    \"price\": 4.285\n} "
+				},
+				"url": {
+					"raw": "{{host}}/api/products",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update single product",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"product 1\",\n    \"stock\": 100,\n    \"price\": 4.285\n}   "
+				},
+				"url": {
+					"raw": "{{host}}/api/products/1",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"products",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete single product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"product 2\",\n    \"stock\": 100,\n    \"price\": 4.285\n}   "
+				},
+				"url": {
+					"raw": "{{host}}/api/products",
+					"host": [
+						"{{host}}"
+					],
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
